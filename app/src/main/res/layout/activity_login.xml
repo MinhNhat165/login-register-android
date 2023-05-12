@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="160dp"
+        android:contentDescription="Login Logo"
+        android:scaleType="centerInside"
+        android:src="@drawable/logo" />
+
+    <EditText
+        android:drawablePadding="12dp"
+        android:drawableStart="@drawable/ic_baseline_email_24"
+        android:id="@+id/email_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:inputType="textEmailAddress"
+        android:textSize="16sp"
+        android:hint="Email"
+        android:background="@drawable/edittext_bg"
+        android:textColor="@android:color/black"
+        android:padding="12dp"
+        android:layout_marginTop="32dp"
+        android:focusableInTouchMode="true"
+        android:focusable="true"
+        />
+
+    <EditText
+        android:drawableStart="@drawable/ic_baseline_lock_24"
+        android:drawablePadding="12dp"
+        android:id="@+id/password_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:inputType="textPassword"
+        android:textSize="16sp"
+        android:hint="Password"
+        android:background="@drawable/edittext_bg"
+        android:textColor="@android:color/black"
+        android:padding="12dp"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="Login"
+        android:backgroundTint="@color/primary"
+        android:textSize="16sp"
+        android:background="@drawable/button_bg"
+        android:textColor="@android:color/white"
+        android:padding="12dp"
+        android:layout_marginTop="32dp"/>
+
+    <TextView
+        android:id="@+id/signup_message_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Don't have an account? Sign up"
+        android:layout_gravity="center_horizontal"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"/>
+
+</LinearLayout>
+
+

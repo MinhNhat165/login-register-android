@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter the OTP received on your email"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:paddingBottom="32dp"/>
+
+    <EditText
+        android:id="@+id/otp_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:inputType="number"
+        android:maxLength="6"
+        android:textSize="24sp"
+        android:gravity="center_horizontal"
+        android:background="@drawable/edittext_bg"
+        android:textColor="@android:color/black"
+        android:padding="12dp"
+        android:hint="Enter OTP"/>
+
+    <Button
+        android:id="@+id/verify_button"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="Verify"
+        android:textSize="16sp"
+        android:background="@drawable/button_bg"
+        android:textColor="@android:color/white"
+        android:padding="12dp"
+        android:layout_marginTop="32dp"/>
+
+</LinearLayout>
+
