@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter the OTP received on your email"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:paddingBottom="32dp"/>
+
+    <EditText
+        android:layout_marginBottom="16dp"
+        android:id="@+id/otp_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:inputType="number"
+        android:maxLength="6"
+        android:textSize="24sp"
+        android:gravity="center_horizontal"
+        android:background="@drawable/edittext_bg"
+        android:textColor="@android:color/black"
+        android:padding="12dp"
+        android:hint="Enter OTP"/>
+
+    <EditText
+        android:drawableStart="@drawable/ic_baseline_lock_24"
+        android:drawablePadding="12dp"
+        android:layout_marginBottom="16dp"
+        android:layout_height="56dp"
+        android:id="@+id/new_password_edit_text"
+        android:layout_width="match_parent"
+        android:hint="New Password"
+        android:padding="12dp"
+        android:textColorHint="#A9A9A9"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:inputType="textPassword"
+        android:background="@drawable/edittext_bg"/>
+
+    <EditText
+        android:drawableStart="@drawable/ic_baseline_lock_24"
+        android:drawablePadding="12dp"
+        android:layout_marginBottom="16dp"
+        android:id="@+id/new_confirm_password_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:hint="Confirm New Password"
+        android:padding="12dp"
+        android:textColorHint="#A9A9A9"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:inputType="textPassword"
+        android:background="@drawable/edittext_bg"/>
+    <LinearLayout
+        android:layout_marginTop="32px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:clickable="true"
+            android:id="@+id/signup_message_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Didn't receive Opt? "
+            android:layout_gravity="center"
+            android:textSize="18sp"
+            />
+        <TextView
+            android:clickable="true"
+            android:id="@+id/resend_otp_reset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Resend Otp"
+            android:layout_gravity="center"
+            android:textSize="18sp"
+            android:padding="4dp"
+            android:textStyle="bold"
+            android:textColor="@color/primary"
+            />
+    </LinearLayout>
+    <Button
+        android:id="@+id/reset_password_button"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="Reset"
+        android:textSize="16sp"
+        android:background="@drawable/button_bg"
+        android:textColor="@android:color/white"
+        android:padding="12dp"
+        android:layout_marginTop="32dp"/>
+
+
+</LinearLayout>

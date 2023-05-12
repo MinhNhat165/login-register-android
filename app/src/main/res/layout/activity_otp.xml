@@ -39,6 +39,35 @@
         android:textColor="@android:color/white"
         android:padding="12dp"
         android:layout_marginTop="32dp"/>
+    <LinearLayout
+        android:layout_marginTop="32px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <TextView
+        android:clickable="true"
+        android:id="@+id/signup_message_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Didn't receive Opt? "
+        android:layout_gravity="center"
+        android:textSize="18sp"
+        />
+        <TextView
+            android:clickable="true"
+            android:id="@+id/resend_otp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Resend Otp"
+            android:layout_gravity="center"
+            android:textSize="18sp"
+            android:padding="4dp"
+            android:textStyle="bold"
+            android:textColor="@color/primary"
+            />
+    </LinearLayout>
+
 
 </LinearLayout>
 

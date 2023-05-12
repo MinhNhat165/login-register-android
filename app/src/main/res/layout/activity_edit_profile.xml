@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="16dp"
+    >
+    <RelativeLayout
+        android:layout_marginHorizontal="-16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_marginBottom="20dp"
+        >
+
+        <TextView
+            android:drawableLeft="@drawable/ic_baseline_keyboard_arrow_left_24"
+            android:id="@+id/back_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/primary"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_alignParentLeft="true"
+            android:text="Back"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_alignParentRight="true"
+            android:text="Profile Edit"
+            />
+    </RelativeLayout>
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/avatar_edit_image_view"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/avatar_placeholder" />
+
+        <Button
+            android:id="@+id/upload_button"
+            android:layout_width="wrap_content"
+            android:layout_height="56dp"
+            android:layout_marginTop="32dp"
+            android:backgroundTint="@color/primary"
+            android:padding="12dp"
+            android:text="Upload"
+            android:layout_marginLeft="12dp"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <View
+        android:layout_marginVertical="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/primary"
+        />
+
+    <EditText
+        android:drawableStart="@drawable/ic_baseline_person_24"
+        android:drawablePadding="12dp"
+        android:id="@+id/username_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:hint="Username"
+        android:inputType="text"
+        android:padding="12dp"
+        android:textColorHint="#A9A9A9"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:background="@drawable/edittext_bg"/>
+
+    <RadioGroup
+        android:layout_marginBottom="16dp"
+        android:layout_height="56dp"
+        android:id="@+id/gender_radio_group"
+        android:layout_width="match_parent"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/male_radiobutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:buttonTint="#000000"/>
+
+        <RadioButton
+            android:id="@+id/female_radiobutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:buttonTint="#000000"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/save_button"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="Save"
+        android:textStyle="bold"
+        android:backgroundTint="@color/primary"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:padding="12dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="32dp"/>
+
+
+</LinearLayout>

@@ -43,7 +43,17 @@
         android:textColor="@android:color/black"
         android:padding="12dp"
         android:layout_marginTop="16dp"/>
-
+    <TextView
+        android:id="@+id/forgot_pass_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot password?"
+        android:clickable="true"
+        android:layout_gravity="left"
+        android:textSize="16sp"
+        android:textColor="@color/primary"
+        android:textStyle="italic"
+        android:layout_marginTop="12dp"/>
     <Button
         android:id="@+id/login_button"
         android:layout_width="match_parent"
@@ -57,6 +67,7 @@
         android:layout_marginTop="32dp"/>
 
     <TextView
+        android:clickable="true"
         android:id="@+id/signup_message_textview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -64,6 +75,26 @@
         android:layout_gravity="center_horizontal"
         android:textSize="16sp"
         android:layout_marginTop="16dp"/>
+    <TextView
+        android:id="@+id/or_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Or"
+        android:layout_gravity="center_horizontal"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="24dp"/>
+    <Button
+        android:id="@+id/google_login_button"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:text="Login with google"
+        android:textStyle="bold"
+        android:backgroundTint="@color/primary"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:padding="12dp"
+        android:layout_marginTop="8dp"/>
 
 </LinearLayout>
 

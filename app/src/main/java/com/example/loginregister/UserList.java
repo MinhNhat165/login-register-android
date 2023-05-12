@@ -43,6 +43,16 @@ public class UserList {
         return null;
     }
 
+    public void updateUser(User userToUpdate) {
+        for (int i = 0; i < userList.size(); i++) {
+            User user = userList.get(i);
+            if (user.getEmail().equals(userToUpdate.getEmail())) {
+                userList.set(i, userToUpdate);
+                return;
+            }
+        }
+    }
+
     public void addUser(User user) {
         this.userList.add(user);
     }
