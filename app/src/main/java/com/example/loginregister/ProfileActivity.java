@@ -1,7 +1,9 @@
 package com.example.loginregister;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -58,6 +60,7 @@ public class ProfileActivity extends AppCompatActivity {
             intent1.putExtra("user", user);
             startActivity(intent1);
         });
+
     }
     private class LoadImg extends AsyncTask<String, Void, Bitmap> {
 
@@ -82,6 +85,8 @@ public class ProfileActivity extends AppCompatActivity {
             avatarImageView.setImageBitmap(bitmap);
         }
     }
+
+
 
     private void logout() {
         Intent intent = new Intent(ProfileActivity.this, LoginActivity.class);
